@@ -30,7 +30,7 @@ const App: React.FC = () => {
       alert("All fields are required");
     }
     else{
-      await axios.post("http://localhost:1000/api/v1/post",Values).then((res) => {
+      await axios.post("https://contact-backend-api-am2x.onrender.com/api/v1/post",Values).then((res) => {
         alert(res.data.message);
       })
       setValues({

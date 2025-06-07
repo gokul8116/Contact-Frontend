@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     host: '0.0.0.0',
+    allowedHosts: ['https://contact-frontend-086i.onrender.com'] 
   },
 })

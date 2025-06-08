@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+# 📬 Contact Form
+> A responsive and functional contact form built using the MERN stack (MongoDB, Express, React, Node.js). This project allows users to send messages through a form with real-time validation and securely stores messages in a MongoDB database.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🔗 Repositories
+- [Frontend Repo (You're here!)](https://github.com/gokul8116/Contact-Frontend)
+- [Backend Repo](https://github.com/gokul8116/Contact-Backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
+👉 [View Live Project](https://contact-frontend-086i.onrender.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📂 Project Structure
+- Frontend: Built with React, styled for responsiveness across devices.
+- Backend: Developed using Express.js, connected to MongoDB for secure message storage.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
+- React
+- Axios
+- Node.js
+- Express.js
+- MongoDB
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+## 🌟 Features
+- Real-time form validation with user-friendly error messages
+- Secure message storage in MongoDB
+- Smooth and responsive UI for all screen sizes
+- Alert notification on successful submission
+
+
+## 📬 How It Works
+- User fills out the contact form.
+- Real-time validation checks for valid input.
+- On submission, form data is sent via Axios to the backend API.
+- Backend saves the message securely in MongoDB.
+- Success message is shown on the frontend.
